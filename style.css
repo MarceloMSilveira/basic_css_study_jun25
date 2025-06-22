@@ -1,5 +1,5 @@
 html {
-  background-color: #00539f;
+  background-color: #2a4b7c;
   font-size: 1.2em;
 }
 
@@ -9,7 +9,7 @@ img{
 }
 
 li{
-  background-color: greenyellow;
+  background-color: #fdd08a;
   border: 1px solid black;
   border-radius: 5px;
   padding-left: 10px;
@@ -25,9 +25,13 @@ p{
 }
 
 body {
-  padding: 10px;
-
+  width: 600px;
+  margin: 0 auto;
+  background-color: #ff9500;
+  padding: 0 20px 20px 20px;
+  border: 5px solid black;
 }
+
 
 .audiowide-regular {
   font-family: "Audiowide", sans-serif;
@@ -61,24 +65,21 @@ body {
   letter-spacing: 2px;
 }
 
-.textTable {
+.other-table{
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 25px;
+  gap: 20px;
   border: 1px solid;
-  padding: 10px;
-  overflow-wrap: break-word;
-  word-wrap: break-word;
-  box-sizing: border-box;
-}
-
-.textTable > div {
-  max-width: 100%;
-  box-sizing: border-box;
+  padding: 0 20px;
 }
 
 h1{
   text-align: center;
+}
+
+a{
+  text-decoration: none;
+  color: #7a5f9d;
 }
 
 /*Abaixo de 300px o grid vira um flex-box com direção vertical (coluna)*/
@@ -90,6 +91,10 @@ h1{
     padding-right: 5px;
     padding-left: 5px;
     padding-top: 5px;
+  }
+  .other-table{
+    display: flex;
+    flex-direction: column;
   }
 }
 
