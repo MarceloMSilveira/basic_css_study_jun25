@@ -1,0 +1,95 @@
+html {
+  background-color: #00539f;
+  font-size: 1.2em;
+}
+
+img{
+  width: 100px;
+  height: 100px;
+}
+
+li{
+  background-color: greenyellow;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding-left: 10px;
+  margin-bottom: 3px;
+  width: 150px;
+  max-width: 100%;
+}
+
+p{
+  font-family: sans-serif;
+  text-align: justify;
+  line-height: 1.5;
+}
+
+body {
+  padding: 10px;
+
+}
+
+.audiowide-regular {
+  font-family: "Audiowide", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.exo-100 {
+  font-family: "Exo", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.mainTable{
+  display: grid;
+  grid-template-columns: 30% 70%;
+  border: 1px solid black;
+  padding-right: 5px;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
+
+.mainTable > :first-child {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mainTable > p {
+  letter-spacing: 2px;
+}
+
+.textTable {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+  border: 1px solid;
+  padding: 10px;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  box-sizing: border-box;
+}
+
+.textTable > div {
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+h1{
+  text-align: center;
+}
+
+/*Abaixo de 300px o grid vira um flex-box com direção vertical (coluna)*/
+@media (max-width: 300px) {
+  .mainTable{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    padding-right: 5px;
+    padding-left: 5px;
+    padding-top: 5px;
+  }
+}
+
