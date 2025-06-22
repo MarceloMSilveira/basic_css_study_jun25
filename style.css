@@ -3,9 +3,11 @@ html {
   font-size: 1.2em;
 }
 
-img{
-  width: 100px;
-  height: 100px;
+img {
+  display: block;
+  margin: 0 auto;
+  margin-top: 10px;
+  max-width: 100%;
 }
 
 li{
@@ -31,7 +33,6 @@ body {
   padding: 0 20px 20px 20px;
   border: 5px solid black;
 }
-
 
 .audiowide-regular {
   font-family: "Audiowide", sans-serif;
@@ -73,8 +74,11 @@ body {
   padding: 0 20px;
 }
 
-h1{
-  text-align: center;
+h1 {
+  margin: 0;
+  padding: 20px 0;
+  color: #00539f;
+  text-shadow: 3px 3px 1px black;
 }
 
 a{
@@ -95,6 +99,9 @@ a{
   .other-table{
     display: flex;
     flex-direction: column;
+  }
+  img {
+    max-width: 65%;
   }
 }
 
