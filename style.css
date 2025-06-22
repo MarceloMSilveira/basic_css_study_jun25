@@ -86,6 +86,20 @@ a{
   color: #7a5f9d;
 }
 
+.theButton{
+  margin-bottom: 10px;
+}
+
+button{
+  border-radius: 5px;
+  background-color: #fdd08a;
+  border: none;
+}
+
+button:hover {
+  font-weight: bold;
+}
+
 /*Abaixo de 300px o grid vira um flex-box com direção vertical (coluna)*/
 @media (max-width: 300px) {
   .mainTable{
